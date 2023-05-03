@@ -27,7 +27,7 @@
 // use alloc::{string::String};
 // use easy_fs::{EasyFileSystem, FSManager, FileHandle, Inode, OpenFlags};
 //use spin::Lazy;
-use easy_fs::{bitmap::Bitmap};
+//use easy_fs::{bitmap::Bitmap};
 
 /// 将应用打包到 easy-fs 镜像中放到磁盘中，
 /// 当我们要执行应用的时候只需从文件系统中取出ELF 执行文件格式的应用 并加载到内存中执行即可，
@@ -92,7 +92,7 @@ fn test_bitmap() -> std::io::Result<()> {
     //     1
     // );
 
-    let bitmap1 = Bitmap::new(VIRTIO0,100);
+    // let bitmap1 = Bitmap::new(VIRTIO0,100);
     // let _a = &block_file.clone();
     // bitmap1.alloc(block_file.clone());
     //(& bitmap1).dealloc(&block_file, 300);
