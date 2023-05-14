@@ -19,6 +19,7 @@ fn decomposition(mut bit: usize) -> (usize, usize, usize) {
     (block_pos, bit / 64, bit % 64)
 }
 
+
 impl Bitmap {
     /// A new bitmap from start block id and number of blocks
     /// 根据起始块id和块数创建新位图
