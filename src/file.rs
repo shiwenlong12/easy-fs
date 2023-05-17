@@ -27,6 +27,7 @@ impl UserBuffer {
     }
 }
 
+// 位标志！ 宏生成管理一组标志的结构。 
 bitflags! {
   /// Open file flags
   pub struct OpenFlags: u32 {
